@@ -59,6 +59,7 @@ Un projet avec du code à refactorer ou une feature à implémenter. Utilisez vo
 ## Etape 2 : demander à un premier agent de déléguer
 - soit avec smux
 - soit avec les subagents de Codex
+- soit avec un framework dédié comme **[Hermes Agent](https://github.com/MinishLab/hermes)** pour orchestrer plusieurs agents spécialisés
 
 ---
 

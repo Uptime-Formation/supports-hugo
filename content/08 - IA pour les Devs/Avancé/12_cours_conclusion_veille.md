@@ -9,7 +9,7 @@ weight: 2040
 **L'écosystème IA évolue très vite :**
 
 Evolution des outils :
-- Emergence d'outils asynchrones comme Jules de Google
+- Emergence d'outils asynchrones comme Jules de Google, Copilot web agents, ou **[OpenCode GUI](https://opencode.school/)** — l'équivalent open-source : on lance des tâches depuis une interface web, l'agent travaille en arrière-plan, on récupère le diff ou la PR
 - De plus en plus d'outils conscients des problématiques design
 - Une optimisation des coûts et de l'alternance réflexion / exécution
 - Des budgets par rapport à des objectifs
@@ -162,6 +162,7 @@ deepwiki_fetch:
 - **[claude-devtools](https://github.com/matt1398/claude-devtools)** — Les DevTools manquants pour Claude Code : inspecter les sessions, tool calls, usage de tokens, sous-agents et fenêtre de contexte en UI visuelle.
 - **[codeburn](https://github.com/AgentSeal/codeburn)** — Visualise où vont vos tokens session par session (par type de tool call, fichiers lus, etc.). Utile pour identifier ce qui consomme inutilement.
 - **[rtk](https://github.com/rtk-ai/rtk)** — Proxy CLI qui réduit la consommation de tokens de 60-90% sur les commandes dev courantes.
+- **[OpenChamber](https://github.com/openchamber/openchamber)** — Framework pour orchestrer et monitorer un écosystème d'agents.
 
 ## Lectures
 

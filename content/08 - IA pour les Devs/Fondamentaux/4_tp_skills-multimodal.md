@@ -38,6 +38,10 @@ Un skill est un dossier contenant un fichier `SKILL.md`. OpenCode cherche les sk
 - **Projet :** `.opencode/skills/<nom>/SKILL.md`
 - **Global :** `~/.config/opencode/skills/<nom>/SKILL.md`
 
+**Astuce :** [opencode.school](https://opencode.school/) propose une GUI web pour créer et gérer des skills sans toucher au filesystem.
+
+Pour pouvoir gérer ces agents, on pourra faire référence à ce skill par exemple : [smux/SKILL.md](https://github.com/ShawnPana/smux/blob/main/skills/smux/SKILL.md).
+
 ```markdown
 ---
 name: mon-skill
@@ -130,9 +134,8 @@ Observez : l'agent charge le skill, lance l'app si nécessaire, utilise `browser
 
 # Objectif
 
-Réaliser une feature non triviale sur Comparia en suivant le cycle complet : plan → build → PR review → retro AGENTS.md.
+Réaliser une feature en suivant le cycle complet : plan → build → PR review → retro AGENTS.md.
 
-C'est le payoff de tous les TPs précédents : AGENTS.md, Makefile, prompts structurés — tout ça ensemble.
 
 ---
 

@@ -176,6 +176,9 @@ Lancez-le :
 
 Pour des corpus vraiment larges (> 500 pages, plusieurs livres), regarder **Docling** (IBM, open source) ou **Qdrant** pour du vrai RAG vectoriel. Mais pour la majorité des cas, ripgrep suffit.
 
+Alternative : **[semble](https://github.com/MinishLab/semble#token-efficiency)** — BM25
+
+
 ---
 
 # Livrable
