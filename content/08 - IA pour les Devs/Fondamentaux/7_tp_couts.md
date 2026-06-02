@@ -1,6 +1,6 @@
 ---
-title: "5 - TP Contexte et coûts"
-weight: 1065
+title: "7 - TP Contexte et coûts"
+weight: 1070
 ---
 
 ## Visualiser sa consommation avec codeburn

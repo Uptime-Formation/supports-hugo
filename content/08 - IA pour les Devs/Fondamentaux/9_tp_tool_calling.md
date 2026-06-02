@@ -1,6 +1,6 @@
 ---
-title: "3 - TP Tool Calling et MCP"
-weight: 1045
+title: "9 - TP Tool Calling et MCP"
+weight: 1090
 ---
 
 ## _Observer ce que fait l'agent_
@@ -426,4 +426,4 @@ Plusieurs MCPs communautaires disponibles — pratique si votre équipe est sur 
 
 # Prochain module
 
-Module 4 : Bonnes Pratiques - AGENTS.md, Makefile, Docker, README.
+Module 10 : Skills & Tests visuels.

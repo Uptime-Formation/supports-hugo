@@ -1,6 +1,6 @@
 ---
-title: "2 - TP AGENTS.md, Prompts et Script de Commandes"
-weight: 1035
+title: "5 - TP AGENTS.md, Prompts et Script de Commandes"
+weight: 1050
 ---
 
 ## _Structurer le contexte pour l'IA_
@@ -259,4 +259,4 @@ Si vous corrigez vous-même, dites-le à l'agent — il doit comprendre pourquoi
 
 # Prochain module
 
-Module 3 : Tool Calling et MCP — comprendre ce que fait réellement l'agent.
+Module 8 : Tool Calling et MCP — comprendre ce que fait réellement l'agent.

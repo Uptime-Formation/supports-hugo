@@ -1,6 +1,6 @@
 ---
-title: "1 - TP Configuration et Premier Pas"
-weight: 1025
+title: "3 - TP Configuration et Premier Pas"
+weight: 1030
 ---
 
 ## _Mise en route de l'environnement_
@@ -139,6 +139,8 @@ opencode
 > **Bonus :** [Comparia](https://github.com/betagouv/comparia) (outil de comparaison de LLMs de beta.gouv.fr) est une vraie app en production si vous voulez un terrain plus complexe.
 
 ---
+
+> **opencode.school :** [Lesson 3 — Configuration](https://opencode.school/lessons/configuration/) — va plus loin sur les options du fichier de config global.
 
 # Ressources
 

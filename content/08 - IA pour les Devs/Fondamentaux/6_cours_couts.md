@@ -1,6 +1,6 @@
 ---
-title: "5 - Cours Coûts"
-weight: 1064
+title: "6 - Cours Coûts"
+weight: 1060
 ---
 
 ## _Utiliser le bon modèle pour la bonne tâche_
@@ -25,7 +25,7 @@ Mise en perspective du Hacker News :
 | Power user | $100–700 | Usage API intensif |
 | Extrême | $24 000 | Claude Code sans limite (cas réel HN) |
 
-<!-- Ce n'est pas une fatalité — c'est une question de stratégie. -->
+<!-- Plutôt une question de stratégie qu'une fatalité. -->
 
 **Prix des modèles courants sur OpenRouter (output tokens) :**
 
@@ -131,7 +131,7 @@ Un agent qui reçoit "Refactor the auth service" fait en réalité deux choses t
 
 → Tâche répétitive et prévisible. Un modèle cheap et rapide (Gemini Flash, Haiku) suffit largement.
 
-**L'insight :** payer le modèle cher uniquement pour la réflexion, pas pour l'exécution mécanique.
+**En pratique :** payer le modèle cher pour la réflexion, pas pour l'exécution mécanique.
 
 ---
 
@@ -258,6 +258,8 @@ Session 2 (même contexte) : 10 000 tokens → $0.003 (cache hit)
 **Question clé :** Pour quelle tâche d'aujourd'hui auriez-vous pu utiliser un modèle moins cher ?
 
 **Pattern retenu :** Phase Plan = raisonnement fort. Phase Act = modèle frugal.
+
+> **opencode.school :** [Lesson 6 — Models](https://opencode.school/lessons/models/) — changer de modèle en cours de session et configurer les profils plan/act.
 
 ---
 <!-- 

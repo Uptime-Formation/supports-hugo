@@ -1,6 +1,6 @@
 ---
-title: "8 - Conventions d'équipe & gestion de projet"
-weight: 2025
+title: "7 - Conventions d'équipe & gestion de projet"
+weight: 2070
 ---
 
 ## _Cadrer l'usage de l'IA dans une équipe, et l'utiliser pour piloter_
@@ -293,7 +293,7 @@ gh label create "ai-generated" --color "B8B8B8" \
 gh pr edit <number> --add-label ai-generated
 ```
 
-L'intérêt n'est pas de stigmatiser le code IA — c'est de **rendre visible** la part d'IA dans le repo, pour adapter la review.
+Le but : **rendre visible** la part d'IA dans le repo pour adapter la review, pas stigmatiser le code généré.
 
 ---
 
@@ -316,6 +316,8 @@ Questions à se poser dans l'équipe :
 - **Repo manager sans code** : `docs/templates/`, `.codex/commands/`, PLAN.md, ISSUES.md — versionné comme du code.
 - **MCP Jira** : l'agent crée et lit les tickets directement, en s'appuyant sur vos templates.
 - **Skill `doc-generate`** : doc d'archi + schémas Mermaid versionnés à côté du code, re-générables à volonté.
-- **Prompt engineering** : contexte, format, exemples, questions ouvertes — pas de magie.
+- **Prompt engineering** : contexte, format, exemples, questions ouvertes. Rien de plus.
 - **Conventions d'équipe** : 3 règles votées valent mieux qu'un document de 20 pages.
 - **Fichiers markdown** : la mémoire partagée entre humains et agents.
+
+> **opencode.school :** [Lesson 5 — Instructions](https://opencode.school/lessons/instructions/) + [Lesson 3 — Configuration](https://opencode.school/lessons/configuration/) — configurer AGENTS.md global vs projet, et partager les conventions via le repo.

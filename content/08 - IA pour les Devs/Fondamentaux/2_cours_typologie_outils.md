@@ -1,5 +1,5 @@
 ---
-title: "1 - Typologie des Outils IA"
+title: "2 - Typologie des Outils IA"
 weight: 1020
 ---
 
@@ -7,9 +7,9 @@ weight: 1020
 
 ---
 
-# La clé : votre propre API key
+# Apportez votre propre clé API
 
-**Le point essentiel : tous les outils se valent.**
+**Les outils sont largement interchangeables.**
 
 Ce qui compte : **apporter votre propre clé API** (via OpenRouter, OpenAI, Anthropic...) et utiliser n'importe quel outil.
 
@@ -147,3 +147,5 @@ Le TP fil rouge commence : configuration de votre environnement.
 
 **Objectif :**
 1. Configurer Opencode ou Roo avec votre clé
+
+> **opencode.school :** [Lesson 1 — Installation](https://opencode.school/lessons/installation/) — chemin alternatif pas-à-pas si vous préférez la version guidée interactive.

@@ -1,6 +1,6 @@
 ---
-title: "2 - Prompt Engineering pour Devs"
-weight: 1030
+title: "4 - Prompt Engineering pour Devs"
+weight: 1040
 ---
 
 ## _Parler efficacement à l'IA_
@@ -132,17 +132,6 @@ class UserService:
 
 ---
 
-# Gestion du contexte de session
-
-L'IA ne "se souvient" de rien entre les sessions — et dans une même session, **trop de contexte dégrade la qualité des réponses**. Ce n'est pas seulement une question de coût : un contexte pollué (nombreux fichiers lus, chemins abandonnés, erreurs accumulées) crée du bruit qui fait dériver l'agent.
-
-Signal d'alarme : si l'agent propose des solutions déjà essayées, oublie des contraintes données en début de session, ou semble "confus" — c'est le signe que le contexte est saturé.
-
-**Règles pratiques :**
-
-- **Une session = un problème.** Ne mélangez pas deux bugs ou deux features dans la même session.
-- **Plusieurs sessions courtes > une longue session.** Des sessions ciblées donnent de meilleurs résultats qu'une session marathon.
-- **Commencez propre régulièrement.** Plutôt que continuer une session qui accumule trop, ouvrez-en une nouvelle — ou utilisez `/compact` (résume sans perdre le fil) quand le contexte dépasse 70%, `/clear` quand il dépasse 85%.
 <!-- 
 ## Le cas particulier du "reasoning"
 
@@ -169,7 +158,7 @@ C'est une **feature propriétaire et opaque** : chaque provider l'implémente di
 
 Le contexte s'accumule à chaque échange : historique de la conversation, fichiers lus, résultats de commandes, sorties de tests.
 
-**Ce n'est pas que pour les coûts c'est une question de focus.** Un contexte saturé dégrade la qualité des réponses : l'agent commence à oublier des contraintes, à reproduire des erreurs déjà corrigées, à se perdre dans des chemins abandonnés. La performance chute bien avant que le token limit soit atteint.
+**Gérer son contexte est d'abord une affaire de focus, pas seulement de budget.** Un contexte saturé dégrade la qualité des réponses : l'agent commence à oublier des contraintes, à reproduire des erreurs déjà corrigées, à se perdre dans des chemins abandonnés. La performance chute bien avant que la limite de tokens soit atteinte.
 
 **Règles de session :**
 
@@ -226,4 +215,6 @@ opencode --continue          # Reprend la dernière session compactée
 
 Le TP fil rouge continue : créer un `AGENTS.md` pour votre projet démo.
 
-Voir `2_tp_agents.md` →
+Voir `5_tp_agents.md` →
+
+> **opencode.school :** [Lesson 5 — Instructions](https://opencode.school/lessons/instructions/) — guide interactif pour écrire son AGENTS.md depuis l'intérieur de l'agent.

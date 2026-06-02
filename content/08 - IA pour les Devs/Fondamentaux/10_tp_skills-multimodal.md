@@ -1,6 +1,6 @@
 ---
-title: "4 - TP Skills & Tests visuels"
-weight: 1055
+title: "10 - TP Skills & Tests visuels"
+weight: 1100
 draft: false
 ---
 
@@ -144,7 +144,7 @@ Réaliser une feature en suivant le cycle complet : plan → build → PR review
 Quelque chose qui touche plusieurs fichiers et nécessite au moins un test :
 - Export CSV des comparaisons
 - Historique des sessions avec persistance
-- Mode "personnage" persistant entre les messages (reprend l'idée de TP2 côté backend)
+- Mode "personnage" persistant entre les messages (reprend l'idée du TP 5 côté backend)
 - **Une seule conversation** — Comparia affiche actuellement deux conversations en parallèle. Simplifier à une seule réduit la surface d'état côté frontend et backend, sans retirer la comparaison (on peut conserver les deux modèles côte à côte sur un même échange).
 - **Historique côté client** — Sauvegarder les comparaisons dans le localStorage pour les retrouver après rechargement.
 
@@ -258,6 +258,8 @@ Ressources :
 
 - <https://opencode.ai/docs/skills/>
 - <https://developers.openai.com/codex/skills>
+
+> **opencode.school :** [Lesson 8 — Skills](https://opencode.school/lessons/skills/) — installer des skills existants avec `npx skills` et en créer depuis l'interface web.
 
 ---
 

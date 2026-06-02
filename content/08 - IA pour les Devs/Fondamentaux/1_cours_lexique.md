@@ -1,6 +1,6 @@
 ---
-title: "0 - Lexique"
-weight: 1012
+title: "1 - Lexique"
+weight: 1010
 ---
 
 ## _Les termes du cours_
@@ -88,3 +88,5 @@ git worktree add ../feature-auth feature/auth
 git worktree add ../feature-export feature/export
 # Deux agents, deux branches, sans se marcher dessus
 ```
+
+> **opencode.school :** [Glossaire](https://opencode.school/glossary) — définitions de référence pour tous les termes de ce cours.

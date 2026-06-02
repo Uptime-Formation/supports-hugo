@@ -1,6 +1,6 @@
 ---
-title: "11 - TP Frontend & Skills documentaires"
-weight: 2036
+title: "6 - TP Frontend & Skills documentaires"
+weight: 2060
 ---
 
 ## _Créer des skills qui savent lire tes docs_
@@ -177,6 +177,8 @@ Lancez-le :
 Pour des corpus vraiment larges (> 500 pages, plusieurs livres), regarder **Docling** (IBM, open source) ou **Qdrant** pour du vrai RAG vectoriel. Mais pour la majorité des cas, ripgrep suffit.
 
 Alternative : **[semble](https://github.com/MinishLab/semble#token-efficiency)** — BM25
+
+> **opencode.school :** [Lesson 8 — Skills](https://opencode.school/lessons/skills/) — créer et distribuer des skills réutilisables, les partager avec l'équipe via `npx skills`.
 
 
 ---

@@ -1,6 +1,6 @@
 ---
-title: "6 - TP Tests unitaires et fonctionnels"
-weight: 1065
+title: "4 - TP Tests unitaires et fonctionnels"
+weight: 2040
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "7 - TP Sandboxing, Sécurité & Exécution Autonome"
-weight: 2015
+title: "3 - TP Sandboxing, Sécurité & Exécution Autonome"
+weight: 2030
 ---
 
 <!-- ## _Faire tourner un agent sans supervision sans se tirer une balle dans le pied_ -->
@@ -387,7 +387,7 @@ Une injection peut déclencher l'appel — mais l'humain dans la boucle voit la 
 | Escalade via tools | Scope minimal des outils | Séparation fetch/execute |
 | Fuite de secrets du repo | Sortir les secrets du container | `.dockerignore` agressif |
 
-**La conclusion inconfortable :** un agent avec outils et accès réseau qui lit du contenu externe **sera** un jour compromis par une injection si vous ne prenez pas de mesures. Ce n'est pas une question de si, c'est une question de quand et d'impact.
+**La conclusion inconfortable :** un agent avec outils et accès réseau qui lit du contenu externe **sera** un jour compromis par une injection si vous ne prenez pas de mesures. Tôt ou tard, ça arrivera ; reste à savoir quand, et avec quel impact.
 
 ---
 
@@ -506,5 +506,7 @@ export GITHUB_TOKEN="github_pat_read_only_xxx"
 **Question clé :** Pour votre projet, quel niveau de sandbox est réaliste à mettre en place aujourd'hui ?
 
 **Question sécurité :** Si votre agent fait des `WebFetch` dans le cadre de son travail, quelle combinaison de défenses contre la prompt injection allez-vous mettre en place ?
+
+> **opencode.school :** [Lesson 4 — Permissions](https://opencode.school/lessons/permissions/) — les trois niveaux de permission et les guardrails Git par projet.
 
 ---

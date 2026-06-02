@@ -1,6 +1,6 @@
 ---
-title: "00 - Workflow Git & Docker (Transversal)"
-weight: 2000
+title: "2 - Workflow Git & Docker"
+weight: 2020
 ---
 
 ## _Ce workflow s'applique à TOUS les modules_
@@ -411,10 +411,9 @@ AGENT: "Based on the search results, NextAuth.js v5 with OAuth
 ```
 
 **Les TP qui utilisent MCP Search :**
-- Module 8 : Debugging (recherche d'erreurs)
-- Module 9 : Tests (patterns de test)
-- Module 11 : Unknown Tech (doc Rust/Bevy)
-- Module 12 : Projet (recherche générale)
+- Jour 2 — TP 3 : Sandboxing & sécurité (recherche d'erreurs)
+- Jour 2 — TP 4 : Tests (patterns de test)
+- Jour 2 — TP 6 : Skills documentaires (doc RGAA, OWASP)
 
 ---
 
@@ -424,7 +423,9 @@ AGENT: "Based on the search results, NextAuth.js v5 with OAuth
 
 - [ ] Branche Git créée (`feature/nom-feature`)
 - [ ] AGENTS.md configuré avec "call me by name"
-- [ ] Sandbox choisi si mode autonome (voir TP7)
+- [ ] Sandbox choisi si mode autonome (voir TP 3, Jour 2)
+
+> **opencode.school :** [Lesson 12 — Sessions](https://opencode.school/lessons/sessions/) — reprendre une session, la partager, exporter l'historique.
 - [ ] MCP Search disponible si nécessaire
 
 ## Pendant le TP

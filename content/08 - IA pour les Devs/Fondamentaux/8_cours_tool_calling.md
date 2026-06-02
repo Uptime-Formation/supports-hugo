@@ -1,6 +1,6 @@
 ---
-title: "3 - Tool Calling et MCP"
-weight: 1040
+title: "8 - Tool Calling et MCP"
+weight: 1080
 ---
 
 ## _Comprendre ce que fait réellement l'agent_
@@ -338,7 +338,7 @@ rename_symbol("pwd", "password")  → renommage sûr dans tout le projet
 
 | Outil | Comment |
 |-------|-----|---------|
-| **OpenCode** |  Intégré out-of-the-box |
+| **OpenCode** |  Intégré nativement |
 | **Claude Code** | Plugin LSP | 
 | **Codex CLI** | Via MCP [Serena](https://github.com/oraios/serena) |
 
@@ -367,6 +367,8 @@ Dans une issue GitHub lue par l'agent via MCP GitHub :
 - `npx -y <package-inconnu>` → prudence ou environnement non critique
 
 ---
+
+> **opencode.school :** [Lesson 9 — Tools](https://opencode.school/lessons/tools/) — ajouter un serveur MCP pas-à-pas et vérifier avec `/mcp`.
 
 # TP : Tool Calling en pratique
 

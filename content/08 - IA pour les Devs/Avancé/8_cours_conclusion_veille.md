@@ -1,6 +1,6 @@
 ---
-title: "12 - Veille et Écosystème"
-weight: 2040
+title: "8 - Veille et Écosystème"
+weight: 2080
 ---
 
 
@@ -82,7 +82,7 @@ Le modèle de chat back-and-forth préserve davantage l'esprit critique.
 | GLM-4.7 | ~$0.05 | Via OpenRouter |
 | MiniMax 2.5 | ~$0.10 | Bon rapport qualité/prix |
 | Claude Haiku | $0.25 | Rapide, cohérent |
-| Claude Sonnet | $3.00 | Le sweet spot qualité | -->
+| Claude Sonnet | $3.00 | Le meilleur compromis qualité | -->
 
 - Routage intelligent selon la tâche : Haiku/Flash pour exploration et questions rapides, Sonnet pour implémentation, Opus ou extended thinking pour les cas durs.
 - Tester les derniers modèles open source, souvent moins chers et largement suffisants hors cas limite

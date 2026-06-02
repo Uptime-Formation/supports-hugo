@@ -1,6 +1,6 @@
 ---
-title: "9 - Effort & Autonomie : choisir son niveau"
-weight: 2028
+title: "1 - Effort & Autonomie : choisir son niveau"
+weight: 2010
 ---
 
 ## _Quand utiliser un effort de réflexion maximal ?_
@@ -72,3 +72,5 @@ Le coût n'est pas le sujet. Le sujet c'est de choisir le bon niveau au bon mome
 **High** = problème dur, raisonnement profond, 3ème tentative. Intentionnel, pas par défaut.
 
 **Async** = autonomie maximale, sandbox obligatoire, résultats au matin.
+
+> **opencode.school :** [Lesson 11 — Agents](https://opencode.school/lessons/agents/) — basculer entre agent Plan et agent Build, et créer des agents personnalisés.

@@ -1,6 +1,6 @@
 ---
-title: "10 - TP Orchestration Multi-Agents"
-weight: 2032
+title: "5 - TP Orchestration Multi-Agents"
+weight: 2050
 draft: false
 ---
 
@@ -92,6 +92,8 @@ Plus aucun conflit de fichiers entre workers, même sur du code partagé.
 - Le coût total est dominé par les tokens du gros modèle (réflexion + review), pas par les workers. Cible : 80% des tokens "code généré" sur le petit modèle.
 
 <!-- ---
+
+> **opencode.school :** [Lesson 14 — Workspaces](https://opencode.school/lessons/workspaces/) — créer des espaces de travail parallèles sans conflit de fichiers, depuis l'interface.
 
 # Livrable
 
