@@ -117,7 +117,7 @@ make test         # Est-ce que ça marche ?
 
 ---
 
-# Étape 4 : L'agent face à une dépendance manquante
+<!-- # Étape 4 : L'agent face à une dépendance manquante
 
 Microblog évolue chapitre par chapitre. Les branches avancées introduisent des services externes (Elasticsearch pour la recherche plein texte au chapitre 11, Redis pour les tâches de fond au chapitre 22) qui doivent tourner séparément.
 
@@ -146,7 +146,7 @@ git checkout chapter-22   # ou chapter-11 pour Elasticsearch
 
 Il n'y a pas de bonne réponse — l'objectif est d'observer jusqu'où l'agent va de façon autonome, et à quel moment il faut l'orienter.
 
----
+--- -->
 
 # Étape 5 : Tester l'impact du contexte
 
@@ -162,7 +162,7 @@ codex             # Lancer l'agent
 ```
 
 ```
-> Ajoute un endpoint pour supprimer un utilisateur.
+> Lance l'app
 ```
 
 **Après chaque test :**
@@ -180,14 +180,20 @@ codex
 ```
 
 ```
-> Ajoute un endpoint pour supprimer un utilisateur.
+> Lance l'app
 ```
+
 
 **Ce qu'on observe :**
 - Combien d'itérations ont été nécessaires ?
 - L'agent lit-il AGENTS.md avant de proposer ?
 
-**Idées de features pour aller plus loin :** afficher le nombre de posts d'un utilisateur sur son profil, ajouter un bouton "signaler un post", paginer les followers, afficher la date d'inscription sur la page utilisateur.
+---
+
+# Etape 6 : Ajout d'une fonctionnalité
+
+Demandez l'ajout d'une fonctionnalité, l'agent est-il bien conscient des infos du `AGENTS.md` ? lit-il bien le `Makefile` ? 
+Exemple : afficher le nombre de posts d'un utilisateur sur son profil, changer le thème du site, ajouter un bouton "supprimer un post", ajouter une gestion des utilisateurs, afficher la date d'inscription sur la page utilisateur.
 
 
 ---
