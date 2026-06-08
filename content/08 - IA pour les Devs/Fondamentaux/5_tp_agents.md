@@ -192,15 +192,31 @@ codex
 
 # Etape 6 : Ajout d'une fonctionnalité
 
+
+Recommencez une session.
+
+
 Demandez l'ajout d'une fonctionnalité, l'agent est-il bien conscient des infos du `AGENTS.md` ? lit-il bien le `Makefile` ? 
 Exemple : afficher le nombre de posts d'un utilisateur sur son profil, changer le thème du site, ajouter un bouton "supprimer un post", ajouter une gestion des utilisateurs, afficher la date d'inscription sur la page utilisateur.
 
 
 ---
 
-# Étape 8 : Patterns de workflow
+# Étape 7 : Git pour ne pas se perdre
+
+Observez l'historique Git, que faudrait-il commit ?
+
+
+---
+# Etape 8 : Patterns de workflow
+
 
 ## Todo list pour les tâches complexes
+
+Idéalement pour cette étape on utiliserait une base de code à vous.
+
+Dans une nouvelle session, demandez à l'IA de suggérer une feature un peu complexe en plusieurs étapes.
+
 
 ```
 > Avant de commencer, crée une todo list des étapes pour implémenter
@@ -221,6 +237,8 @@ Le cycle recommandé pour toute feature non triviale :
 ```
 
 > Ne demandez pas à l'agent de tout faire d'un coup. Le cycle court force la vérification à chaque étape.
+
+# Conseils divers
 
 ## L'agent s'arrête au milieu d'une tâche
 
