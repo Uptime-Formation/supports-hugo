@@ -94,12 +94,14 @@ Ne choisissez pas un outil individuel - comprenez les **catégories**.
 | **Jules** | Google, travaille en background |
 | **GitHub Copilot for PR** | Revue automatique |
 | **Manuellement** | ex: Avec Github Actions |
-| **Autres** | Écosystème en croissance rapide |
+| **Opencode avec Gitlab** | <https://opencode.ai/docs/gitlab/> |
 
 **Usage :** Créez une PR, le bot commente et propose des fixes.
 
-## Type 4 : Antigravity
-Un mélange de type 2 et 3.
+## Type 4 : Antigravity, Opencode Desktop
+
+Des worktrees Git natifs.
+
 
 ---
 
