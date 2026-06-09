@@ -36,6 +36,47 @@ La quantité maximale de tokens qu'un modèle peut traiter en une seule fois : p
 **Output tokens** — tout ce que le modèle génère : texte, code, appels d'outils. Coûtent 3–5× plus cher que les tokens d'entrée.
 
 ---
+# Tokens spéciaux / de contrôle
+
+Pour comprendre les **tokens spéciaux** (souvent appelés *special tokens* ou *control tokens*), il faut les imaginer comme la **ponctuation et la grammaire invisibles** que les développeurs utilisent pour parler à l'intelligence artificielle.
+
+Alors que nous utilisons des mots pour communiquer, le modèle utilise ces tokens pour structurer sa "pensée" et savoir quand s'arrêter. Voici un exemple concret de la manière dont ces tokens orchestrent une interaction.
+
+---
+
+### Exemple : Demande de calcul mathématique
+
+Imaginons un utilisateur demandant : *"Combien font 15 multiplié par 4 ?"*
+
+Voici à quoi ressemble la séquence de tokens que le modèle traite en coulisses :
+
+`<system_start>`
+Tu es un assistant expert en mathématiques. Utilise une étape de réflexion avant de répondre.
+`<system_end>`
+`<user_start>`
+Combien font 15 multiplié par 4 ?
+`<user_end>`
+`<thinking>`
+L'utilisateur veut multiplier 15 par 4.
+Je peux décomposer cela : (10 * 4) + (5 * 4) = 40 + 20 = 60.
+La réponse est 60.
+`<thinking_end>`
+Le résultat de 15 multiplié par 4 est 60.
+`<eos>`
+
+### Principaux tokens de contrôle
+
+| Token | Rôle explicatif |
+| --- | --- |
+| **`<system_start/end>`** | **Le cadre :** Ils délimitent les instructions de comportement données par les développeurs. Cela empêche le modèle de confondre les ordres du créateur avec les questions de l'utilisateur. |
+| **`<user_start/end>`** | **L'entrée :** Ils isolent la requête de l'utilisateur. Cela permet au modèle de savoir précisément quelle information il doit traiter. |
+| **`<thinking>`** | **Le brouillon :** Ce token signale au modèle qu'il doit générer une réflexion interne (raisonnement logique) avant de produire une réponse finale. Ce texte n'est pas forcément montré immédiatement à l'utilisateur. |
+| **`<thinking_end>`** | **La fin de la réflexion :** Il indique que la phase de calcul ou de réflexion est terminée et que le modèle doit maintenant rédiger la réponse. |
+| **`<eos>`** | **End Of Sequence (Fin de séquence) :** C'est le plus important. Il indique au modèle que sa génération est complète. Sans ce token, le modèle pourrait continuer à divaguer indéfiniment. |
+
+
+
+---
 
 # Tool call
 
@@ -76,6 +117,7 @@ Texte envoyé au modèle avant la conversation, invisible pour l'utilisateur fin
 Optimisation proposée par certains providers (Anthropic, OpenAI) : les tokens d'entrée répétitifs — même `AGENTS.md`, mêmes fichiers de contexte — sont mis en cache. À la session suivante avec le même contexte, le cache est réutilisé à ~10% du prix normal.
 
 TTL chez Anthropic : 5 minutes.
+
 
 ---
 
