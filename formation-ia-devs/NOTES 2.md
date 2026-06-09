@@ -1,0 +1,21 @@
+olivier arthur, mickael, fabian, thomas, bastien
+
+- ralph loop, innov : "workflows", subagents
+- preuve de concept
+- bon équilibre, ne pas avoir 
+- utilisé sur nouvelles technos pour onboard
+- trop d'allers retour, comment ça marche deriere ??? MCP/SKILLS/plugins? ? chronophage, établir PRD, différentes méthdes
+- outil de revue des PR
+- ollama GUI / codex GUI
+- 1 bckend C++/ win, jira airflow
+- parler de GROUND TRUTH
+- IA locale
+- perplexity pro : 10s vs codex 40min
+- ajout du screen dans la PR dans TP Plawright
+-  https://opencode.ai/docs/github/
+- Oh my opencode sysyphus
+- Faire une vraie jail docker de un workteee
+- Rtk
+- /compact opencode dcp
+- Pi mono
+- Openweb ui
