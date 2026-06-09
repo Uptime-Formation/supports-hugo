@@ -276,13 +276,12 @@ Pas une convention parfaite — une convention que tout le monde a votée et app
 
 Exemples qui reviennent souvent :
 
-```
+
 - Commit de code IA non compris = refus de merge
 - Toute PR IA-générée porte le label "ai-generated"
 - Le reviewer doit valider les dépendances ajoutées par l'IA
 - Pas de secrets ni code propriétaire envoyé à un modèle externe non auto-hébergé
 - Les juniors expliquent le code généré avant de commit
-```
 
 ## Le label `ai-generated` sur GitHub
 
