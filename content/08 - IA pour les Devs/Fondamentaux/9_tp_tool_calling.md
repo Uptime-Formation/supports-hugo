@@ -211,6 +211,8 @@ Avec Microblog qui tourne en local, demandez à l'agent d'interagir avec la page
 > }
 > ```
 > Utile pour déboguer ou montrer ce que l'agent fait visuellement.
+>
+> Il est aussi possible d'utiliser **`playwright-cli`** en cas de souci avec le MCP (ou de limitiation, par exemple pour prendre une capture vidéo)
 <!-- 
 # Étape 6 : LSP — navigation sémantique du code
 
