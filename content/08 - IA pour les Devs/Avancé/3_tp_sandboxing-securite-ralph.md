@@ -318,13 +318,12 @@ C'est un problème fondamental de **confusion de privilèges** : toutes les inst
 
 # Partie 5 : Défenses contre la prompt injection
 
-## Défense n°1 : le sandbox réseau (déjà vu, mais maintenant vous savez pourquoi)
+## Défense n°1 : le sandbox réseau 
 
 ```bash
-docker run --network none ...
+docker run --network  ...
 ```
 
-`--network none` coupe l'exfiltration. L'agent peut être compromis et exécuter la commande — elle échouera car il n'y a pas de réseau. C'est la défense la plus fiable car elle ne dépend pas du modèle.
 
 ## Défense n°2 : principe du moindre privilège sur les outils
 
@@ -382,7 +381,7 @@ Une injection peut déclencher l'appel — mais l'humain dans la boucle voit la 
 | Menace | Défense principale | Défense secondaire |
 |--------|-------------------|-------------------|
 | Agent qui déraille accidentellement | Sandbox Docker | User Linux dédié |
-| Prompt injection → exfiltration | `--network none` | Principe moindre privilège |
+| Prompt injection → exfiltration | Sandbox Docker | Principe moindre privilège |
 | Prompt injection → modification | Validation humaine irréversible | System prompt défensif |
 | Escalade via tools | Scope minimal des outils | Séparation fetch/execute |
 | Fuite de secrets du repo | Sortir les secrets du container | `.dockerignore` agressif |
@@ -429,13 +428,11 @@ CMD ["bash"]
 ```bash
 docker build -t agent-sandbox .
 docker run -it --rm \
-  --network none \
   -v $(pwd)/output:/app/output \
   agent-sandbox \
   bash -c "claude --dangerously-skip-permissions -p '$(cat TASK.md)'"
 ```
 
-`--network none` est le flag le plus important : l'agent ne peut pas exfiltrer de données, appeler des APIs externes, ni télécharger de packages.
 
 ---
 
