@@ -83,58 +83,16 @@ codex
 
 **Claude Code et Codex** ont la recherche web intégrée nativement — rien à faire.
 
-**OpenCode** ou **Roo Code** n'ont pas de recherche intégrée. Il faut ajouter un MCP comme `ddg_search`.
+**OpenCode** ou **Roo Code** n'ont pas de recherche intégrée. Il faut ajouter un MCP comme `brave_search` (clé d'API nécessaire).
 
 
-Opencode :
-```
-{
-"mcp: {
-"ddg_search": {
-      "type": "local",
-      "enabled": true,
-      "command": [
-        "npx",
-        "-y",
-        "@oevortex/ddg_search"
-      ]
-    }
-}
-}
-```
 ---
 
 # Étape 4 : context7 — ancrer l'agent dans la vraie doc
 
 Quand l'agent travaille avec une librairie dont il peut avoir une connaissance périmée, context7 lui injecte la documentation réelle à jour.
 
-**Configurer context7 :**
-
-Opencode :
-```
-{
-"mcp: {
-"context7": {
-      "type": "local",
-      "enabled": true,
-      "command": [
-        "npx",
-        "-y",
-        "@upstash/context7-mcp"
-      ]
-    }
-}
-}
-```
-
-Roo Code:
-> Installer via le Roo Marketplace en cliquant sur les petits cubes en haut
-
-
-Codex :
-```
-codex mcp add context7 -- npx -y @upstash/context7-mcp
-```
+**Configurer context7 :** `npx ctx7 setup`
 
 **Redémarrer l'agent, puis tester :**
 

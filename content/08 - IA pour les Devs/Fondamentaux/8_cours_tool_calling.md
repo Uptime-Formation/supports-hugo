@@ -172,7 +172,7 @@ tools:
   - deepwiki: "vercel/next.js"              # Repo structuré
 ```
 
-> **Note :** Claude Code et Codex ont la recherche web intégrée nativement. Avec OpenCode, elle passe par un MCP : `brave-search`, `websearch` ou `ddg_search` — à choisir selon votre clé API.
+> **Note :** Claude Code et Codex ont la recherche web intégrée nativement. Avec OpenCode, elle passe par un MCP : `brave-search`, `websearch` ou duck duck go ou autre — à choisir
 
 **Exemple concret :**
 ```
@@ -244,27 +244,6 @@ SUCCESS: All tests pass
 **dans Codex :**
 ```
 codex mcp add context7 -- npx -y @upstash/context7-mcp
-```
-
-ou bien
-
-```yaml
-# ~/.codex/config.toml 
-[mcp_servers.context7]
-command = "npx"
-args = ["-y", "@upstash/context7-mcp"]
-env_vars = ["LOCAL_TOKEN"]
-
-[mcp_servers.context7.env]
-MY_ENV_VAR = "MY_ENV_VALUE"
-
-[mcp_servers.chrome_devtools]
-url = "http://localhost:3000/mcp"
-enabled_tools = ["open", "screenshot"]
-disabled_tools = ["screenshot"] # applied after enabled_tools
-startup_timeout_sec = 20
-tool_timeout_sec = 45
-enabled = true
 ```
 
 
