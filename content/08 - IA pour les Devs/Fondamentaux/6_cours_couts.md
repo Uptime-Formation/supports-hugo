@@ -13,7 +13,7 @@ weight: 1060
 # Objectif
 
 Comprendre pourquoi un agent ne devrait pas utiliser le même modèle pour planifier et pour coder — et savoir configurer ses modes en pratique.
-
+<!-- 
 ## La réalité des coûts
 
 Mise en perspective du Hacker News :
@@ -38,7 +38,7 @@ Mise en perspective du Hacker News :
 
 La différence entre Flash et Sonnet sur de l'implémentation mécanique : souvent nulle. Sur de l'architecture : souvent décisive.
 
----
+--- -->
 
 #  Mesurer sa consommation
 

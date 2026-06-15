@@ -15,6 +15,18 @@ Evolution des outils :
 - Des budgets par rapport à des objectifs
 
 ---
+# Le plugin oh-my-openagent et le mode Sisyphus
+
+En mode autonome (ralph loop ou longue tâche), OpenCode peut s'arrêter silencieusement au milieu d'une session — bug connu de l'outil. Le plugin **oh-my-openagent** ajoute le mode **Sisyphus** : quand l'agent s'arrête prématurément, il est relancé automatiquement avec le contexte de la tâche.
+
+```json
+"plugin": ["oh-my-openagent"]
+```
+
+Activer le mode Sisyphus dans l'interface OpenCode avant de lancer une tâche longue sans surveillance. Sans ça, une session de nuit peut silencieusement s'arrêter à mi-chemin sans que vous vous en rendiez compte au matin.
+
+
+---
 
 # Perspectives critiques 
 

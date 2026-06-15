@@ -13,16 +13,6 @@ Tout le monde utilise le même réglage pour tout. Sonnet + interactif + vérifi
 
 L'effort doit être proportionnel à la complexité et à l'impact de la tâche.
 
----
-
-# Les 4 niveaux
-
-| Niveau | Modèle | Tools | Supervision | Coût indicatif |
-|--------|--------|-------|-------------|----------------|
-| **Low** | Haiku / Flash | Aucun | N/A | ~$0.01 |
-| **Mid** | Sonnet | read, grep, edit | Active | ~$0.10–0.50 |
-| **High** | Sonnet (effort élevé) | Tous | Intermittente | ~$1–5 |
-| **Max** | Opus + `--dangerously-skip-permissions` | Tous | Sandbox + tmux | ~$5–20 |
 
 > **"Effort élevé" ≠ mode thinking.** Le *reasoning effort* est un paramètre qui dit au modèle de prendre plus ou moins de temps avant de répondre. Le "mode thinking" est plus général: il génère des tokens de raisonnement internes facturés comme des tokens de sortie. 
 ---

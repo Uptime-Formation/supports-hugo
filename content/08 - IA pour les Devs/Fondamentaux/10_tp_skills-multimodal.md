@@ -160,7 +160,7 @@ Quelque chose qui touche plusieurs fichiers et nécessite au moins un test :
 - Comparaison à 3 modèles (UI non triviale)
 -->
 
----
+<>
 
 # Phase 1 — PLAN (pas de code encore)
 
@@ -175,7 +175,6 @@ Quelque chose qui touche plusieurs fichiers et nécessite au moins un test :
 
 Lisez le plan, questionnez les choix. Validez ou demandez des ajustements avant de passer à la suite.
 
----
 
 # Phase 2 — BUILD
 
@@ -190,7 +189,6 @@ Lisez le plan, questionnez les choix. Validez ou demandez des ajustements avant 
 - L'agent a-t-il pensé à la **protection misclick** ? (confirmation avant action destructive, bouton désactivé pendant le chargement, double-submit impossible…)
 <!-- - Est-il en train de corriger l'environnement et les tests **dans le même commit** ? Si oui, les commits ne sont pas atomiques. -->
 
----
 
 # Phase 3 — Cleanup
 
@@ -208,7 +206,6 @@ S'assurer que l'agent lance lui-même le skill "Nettoyage de code".
 > /simplify
 ```
 
----
 <!-- 
 # Phase 4 — Review
 
@@ -218,7 +215,6 @@ S'assurer que l'agent lance lui-même le skill "Nettoyage de code".
   Identifie les problèmes avant que ça parte en prod.
 ```
 
----
 
 # Phase 5 — Retro → AGENTS.md
 
@@ -234,7 +230,6 @@ L'agent identifie les lacunes de contexte rencontrées. Vous les ajoutez à `AGE
 - Patterns récurrents du projet ("toujours utiliser le service layer")
 - Outils disponibles qu'il ne connaissait pas
 
----
 
 # Livrable
 
@@ -243,13 +238,13 @@ L'agent identifie les lacunes de contexte rencontrées. Vous les ajoutez à `AGE
 - [ ] PR créée avec review documentée
 - [ ] `AGENTS.md` mis à jour après retro
 
----
 
 # Checkpoint
 
 **Pattern retenu :** Plan d'abord, code ensuite, retro toujours.
 
 **Question clé :** Qu'est-ce que la retro a révélé que votre AGENTS.md ne couvrait pas ?
+
 -->
 
 ---

@@ -141,7 +141,7 @@ C'est une **feature propriétaire et opaque** : chaque provider l'implémente di
 
 ---
 
-# Anti-patterns courants
+<!-- # Anti-patterns courants
 
 | Anti-pattern | Conséquence | Solution |
 |--------------|-------------|----------|
@@ -150,7 +150,7 @@ C'est une **feature propriétaire et opaque** : chaque provider l'implémente di
 | Oublier les tests | Code non testé | Demander tests explicites |
 | Ignorer l'existant | Duplication | Référencer les fichiers existants |
 
----
+--- -->
 
 
 

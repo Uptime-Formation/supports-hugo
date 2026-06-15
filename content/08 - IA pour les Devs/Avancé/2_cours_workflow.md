@@ -3,20 +3,12 @@ title: "2 - Workflow Git & Docker"
 weight: 2020
 ---
 
-## _Ce workflow s'applique à TOUS les modules_
-
----
-
-# Pourquoi un workflow transversal ?
-
 **Les agents LLM modifient votre code.**  
 Sans workflow structuré, vous perdez :
 - L'historique des changements
 - La possibilité de revenir en arrière
 - La traçabilité de ce que l'agent a fait
 
-**Ce module est référencé dans tous les TP.**  
-Appliquez-le systématiquement.
 
 ---
 
@@ -209,21 +201,7 @@ Avant chaque commit, vérifier :
 
 **Une feature = Plusieurs commits atomiques.**
 
-### Le problème
-
 ```markdown
-❌ BAD: Un seul commit pour toute la feature
-YOU: "Add user authentication"
-AGENT: [modifies 15 files, adds auth, tests, middleware, docs]
-YOU: git add . && git commit -m "feat: add auth"
-# Diff énorme, impossible à review, rollback tout ou rien
-```
-
-### La solution : Orchestration des commits
-
-```markdown
-✅ GOOD: Guide l'agent commit par commit
-
 YOU: "Add user authentication. Commit after each logical step."
 
 AGENT: 
@@ -262,39 +240,7 @@ AGENT: [Implements step 1]
        ...
 ```
 
-### Checklist commits multiples
-
-```markdown
-- [ ] Chaque commit a un message descriptif
-- [ ] Chaque commit passe les tests
-- [ ] Chaque commit est reviewable seul
-- [ ] `git log --oneline` raconte l'histoire
-- [ ] Rollback possible à n'importe quelle étape
-```
-
-**Avantages :**
-- Code review facilitée
-- Rollback granulaire
-- Historique lisible
-- Debugging plus simple (bisect)
-
 ---
-
-# Yolo Mode ⚠️
-
-## Le piège
-
-**Définition :** Laisser l'agent opérer sans supervision.
-
-```markdown
-❌ BAD:
-YOU: "Fix the bug in auth.ts"
-[AGENT modifies auth.ts]
-[AGENT modifies package.json]
-[AGENT modifies .env ← DANGER]
-[AGENT modifies database schema]
-YOU: "Thanks!" ← Vous n'avez rien vérifié
-```
 
 ## Le pattern sécurisé
 
@@ -365,16 +311,7 @@ L'agent arrête de vous nommer = signal d'alerte.
 - Nouvelles versions de packages
 
 **MCP Search = Interface unifiée.**
-
----
-
-## MCP Disponibles
-
-| MCP | Usage |
-|-----|-------|
-| **Google Custom Search** | Recherche générale |
-| **DuckDuckGo** | Search sans tracking |
-| **Brave Search** | Alternative privacy-first |
+**Brave Search**: Alternative privacy-first 
 
 ---
 
@@ -395,49 +332,3 @@ L'agent arrête de vous nommer = signal d'alerte.
 }
 ```
 
----
-
-## Usage dans les TP
-
-**Pattern :**
-
-```markdown
-YOU: "Search for the latest best practices for Next.js 14 authentication"
-
-AGENT: [uses MCP Brave Search]
-
-AGENT: "Based on the search results, NextAuth.js v5 with OAuth 
-       is recommended. Here's the pattern..."
-```
-
-**Les TP qui utilisent MCP Search :**
-- Jour 2 — TP 3 : Sandboxing & sécurité (recherche d'erreurs)
-- Jour 2 — TP 4 : Tests (patterns de test)
-- Jour 2 — TP 6 : Skills documentaires (doc RGAA, OWASP)
-
----
-
-# Récapitulatif du Workflow
-
-## Checklist avant chaque TP
-
-- [ ] Branche Git créée (`feature/nom-feature`)
-- [ ] AGENTS.md configuré avec "call me by name"
-- [ ] Sandbox choisi si mode autonome (voir TP 3, Jour 2)
-
-> **opencode.school :** [Lesson 12 — Sessions](https://opencode.school/lessons/sessions/) — reprendre une session, la partager, exporter l'historique.
-- [ ] MCP Search disponible si nécessaire
-
-## Pendant le TP
-
-- [ ] Commits atomiques après chaque changement
-- [ ] `git diff` avant chaque commit
-- [ ] Vérification que l'agent respecte les guardrails
-- [ ] Push régulier vers remote
-
-## Après le TP
-
-- [ ] Historique Git reviewé
-- [ ] Branche mergée dans main (ou PR créée)
-
----

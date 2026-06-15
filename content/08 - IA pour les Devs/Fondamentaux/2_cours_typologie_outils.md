@@ -10,26 +10,8 @@ weight: 1020
 # Apportez votre propre clé API
 
 **Les outils sont largement interchangeables.**
+**Apportez votre propre clé API** (via OpenRouter, OpenAI, Anthropic...) et utilisez n'importe quel outil.
 
-Ce qui compte : **apporter votre propre clé API** (via OpenRouter, OpenAI, Anthropic...) et utiliser n'importe quel outil.
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Votre API Key                            │
-│                  (OpenRouter, Claude, etc.)                 │
-└─────────────────────┬───────────────────────────────────────┘
-                      │
-        ┌─────────────┼─────────────┐
-        ▼             ▼             ▼
-   ┌─────────┐   ┌─────────┐   ┌─────────┐
-   │OpenCode │   │Claude   │   │Cursor   │
-   │  (TUI)  │   │Code(TUI)│   │ (IDE)   │
-   └─────────┘   └─────────┘   └─────────┘
-```
-
-**Avantage : pas de vendor lock-in.** Vous changez d'outil sans changer de modèle.
-
----
 
 # Le flux complet
 
@@ -80,6 +62,7 @@ Ne choisissez pas un outil individuel - comprenez les **catégories**.
 **Autocomplete intelligent + agents légers.**
 - **Cursor** 
 - **GitHub Copilot**
+- **Kilo Code**
 - **Cline**
 - **Roo Code**: Fork de Cline
 
@@ -128,12 +111,7 @@ export OPENROUTER_API_KEY="sk-or-v1-..."
 
 **La facture arrive vite : $500-2000/mois** pour un usage intensif.
 
-| Stratégie | Modèle | Coût/Million tokens |
-|-----------|--------|---------------------|
-| **Pingre** | Gemini Flash | ~$0.07 |
-| **Équilibré** | Claude Haiku | ~$0.25 |
-| **Qualité** | Claude Sonnet | ~$3.00 |
-| **Multimodal** | Qwen-VL | ~$0.30 |
+GLM 5.1, Gemini Flash, Claude Haiku, Qwen...
 
 Commencez frugal, passez premium pour les décisions critiques.
 **Pour le cours :** il est intéressant d'opérer avec des modèles suboptimaux pour observer les comportements erratiques principaux des agents, causés par les modèles LLM qui sont derrière.
@@ -143,9 +121,7 @@ Commencez frugal, passez premium pour les décisions critiques.
 
 ---
 
-# TP : Configuration initiale
-
-Le TP fil rouge commence : configuration de votre environnement.
+# Configuration initiale
 
 **Objectif :**
 1. Configurer Opencode ou Roo avec votre clé

@@ -68,7 +68,7 @@ Le **tool calling** est le mécanisme qui permet au LLM de sortir de sa boîte. 
 # La boîte noire
 
 **Avec Claude Code sur TUI (moins sur VSCode ):** Vous ne voyez pas ce que l'agent fait.
-
+<!-- 
 ```
 Utilisateur: "Ajoute l'authentification"
 ┌─────────────────────────────────────┐
@@ -78,9 +78,8 @@ Utilisateur: "Ajoute l'authentification"
 │   ??? accès réseau ???              │
 └─────────────────────────────────────┘
 Résultat: "C'est fait !"
-```
+``` -->
 
----
 
 # Tool Calling transparent
 
