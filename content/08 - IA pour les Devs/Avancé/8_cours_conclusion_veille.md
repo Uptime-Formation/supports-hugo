@@ -120,7 +120,7 @@ Quand vous avez des PDF de référence (OWASP, RGAA, guides internes) :
 
 | Outil | Usage | Installation |
 |-------|-------|-------------|
-| **markdownit** | PDF/Word/Excel/Powerpoint → texte brut, rapide | `uvx markitdown` |
+| **markitdown** | PDF/Word/Excel/Powerpoint → texte brut, rapide | `uvx markitdown` |
 | **pdftotext** | PDF → texte brut, rapide | `apt install poppler-utils` |
 | **pandoc** | PDF/Word/Excel → markdown | `apt install pandoc` |
 | **ripgrep** | Chercher dans le markdown extrait | `apt install ripgrep` |
