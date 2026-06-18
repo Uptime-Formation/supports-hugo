@@ -405,7 +405,7 @@ docker run -it --rm \
 
 ---
 
-# Partie 3 : Soft guardrails — AGENTS.md / CLAUDE.md
+<!-- # Partie 3 : Soft guardrails — AGENTS.md / CLAUDE.md
 
 Les guardrails texte ne sont **pas** une protection de sécurité — ce sont des instructions de comportement. Un agent respecte les bonnes intentions, pas les contraintes dures.
 
@@ -432,7 +432,7 @@ Leur valeur : cadrer le comportement nominal, documenter les contraintes d'équi
 
 **Quand ça ne suffit pas :** `full-auto` sur tâche longue, agents parallèles, CI/CD automatisé.
 
----
+--- -->
 
 # Partie 4 : Org-level controls
 

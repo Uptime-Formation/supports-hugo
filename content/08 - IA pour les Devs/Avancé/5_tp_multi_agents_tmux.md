@@ -47,30 +47,12 @@ orchestrateur (Claude / gros modèle)  ← réflexion, plan, review
 
 Chaque worker dans son propre container : filesystem isolé, réseau contrôlable, reproductible.
 
-## Dockerfile agent
 
-```dockerfile
-FROM node:20-slim
-
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
-RUN useradd -m agent
-USER agent
-
-WORKDIR /workspace
-```
-
-```bash
-docker build -t agent-worker .
-```
+**Récupérons l'image officielle de Opencode**
 
 ## Lancer un worker
-
-```bash
-docker run -dit --name worker-1 \
-  -v $(pwd):/workspace \
-  agent-worker \
-  bash
-```
+ 
+Demandez à votre agent de lancer une session Opencode avec Docker
 
 Le container isole le filesystem. L'agent a **besoin** du réseau pour contacter l'API LLM, donc `--network none` n'est pas applicable ici. La protection contre l'exfiltration repose sur :
 
@@ -82,37 +64,9 @@ Le container isole le filesystem. L'agent a **besoin** du réseau pour contacter
 docker exec worker-1 codex -m gpt-4o-mini --approval-mode full-auto "$(cat TASK_1.md)"
 ```
 
-## Lancer N workers en boucle
-
-```bash
-for i in 1 2 3; do
-  docker run -dit --name worker-$i \
-    -v $(pwd)/task-$i:/workspace \
-    agent-worker \
-    bash
-done
-```
-
-Chaque worker a son propre volume — pas de conflit de fichiers.
-
-## Superviser
-
-```bash
-for i in 1 2 3; do
-  echo "=== worker-$i ==="
-  docker logs worker-$i --tail 20
-done
-```
-
-## Nettoyer
-
-```bash
-for i in 1 2 3; do docker stop worker-$i && docker rm worker-$i; done
-```
-
 ---
 
-# Étape 2 : tmux + smux — superviser et communiquer
+<!-- # Étape 2 : tmux + smux — superviser et communiquer
 
 Docker isole, mais on ne voit pas ce qui se passe en live. tmux donne des sessions persistantes et une vue temps réel. Le skill **smux** ajoute la communication entre panes.
 
@@ -123,7 +77,7 @@ Installer le skill smux : <https://github.com/ShawnPana/smux>
 Puis dans opencode :
 
 ```
-/load-skill smux
+/smux
 ```
 
 ## Layout tmux pour le monitoring
@@ -164,7 +118,7 @@ tmux-bridge keys worker-1 Enter
 # (l'info arrive automatiquement, pas besoin de poll)
 ```
 
-**Règle smux :** ne jamais poll ou attendre. L'agent destinataire répond directement dans votre pane via `[tmux-bridge from:...]`.
+**Règle smux :** ne jamais poll ou attendre. L'agent destinataire répond directement dans votre pane via `[tmux-bridge from:...]`. -->
 
 ## Pattern orchestrateur → workers
 
@@ -178,7 +132,7 @@ tmux-bridge keys worker-1 Enter
 
 ---
 
-# Étape 3 : Paseo — l'orchestration sans plomberie
+# Alternative : Paseo — l'orchestration sans plomberie
 
 Docker + tmux + smux fonctionnent, mais c'est beaucoup de plomberie manuelle. **[Paseo](https://github.com/getpaseo/paseo)** est un CLI qui orchestre plusieurs agents (Claude Code, Codex, OpenCode, Copilot) en une commande.
 
@@ -229,7 +183,7 @@ npx skills add getpaseo/paseo
 
 **Le pattern handoff** correspond à ce qu'on a construit manuellement : Claude planifie, Codex implémente.
 
-## Sécuriser le daemon Paseo
+<!-- ## Sécuriser le daemon Paseo
 
 Paseo lance les agents en processus natifs sur votre machine — pas dans des containers. Le daemon a accès à tout ce que votre user peut faire. Quelques précautions :
 
@@ -247,7 +201,7 @@ Paseo lance les agents en processus natifs sur votre machine — pas dans des co
 }
 ```
 
-- **Pour une isolation complète** : faire tourner le daemon Paseo lui-même dans un container Docker, avec les worktrees montés en volumes. C'est plus de setup, mais les agents n'ont aucun accès à la machine hôte.
+- **Pour une isolation complète** : faire tourner le daemon Paseo lui-même dans un container Docker, avec les worktrees montés en volumes. C'est plus de setup, mais les agents n'ont aucun accès à la machine hôte. -->
 
 ---
 

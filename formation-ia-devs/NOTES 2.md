@@ -19,3 +19,5 @@ olivier arthur, mickael, fabian, thomas, bastien
 - /compact opencode dcp
 - Pi mono
 - Openweb ui
+- plus survoler certains trucs, sauf multi agents qui est sympa, quan don a déjà utilisé codex
+- 
