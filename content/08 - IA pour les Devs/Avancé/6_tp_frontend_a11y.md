@@ -20,7 +20,7 @@ Ce qui change ici : on va créer des skills qui **donnent à l'agent les instruc
 
 Avant de créer des skills spécialisés, il faut un skill de base qui sait interroger un PDF.
 
-## Étape 1 : Générer le skill avec $skill-creator
+## Étape 1 : Générer le skill avec $skill-creator (sur Codex) ou à la main (Opencode)
 
 ```
 $skill-creator
@@ -71,10 +71,6 @@ Le RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est le sta
 **L'idée :** un skill qui, quand vous lui passez un composant, utilise `search-pdf` pour extraire les critères RGAA pertinents et faire la review.
 
 ## Étape 1 : Générer le skill
-
-```
-$skill-creator
-```
 
 ```
 Crée un skill a11y-review qui :
