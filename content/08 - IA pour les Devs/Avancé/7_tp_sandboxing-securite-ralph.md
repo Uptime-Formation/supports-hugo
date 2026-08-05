@@ -383,7 +383,7 @@ Une injection peut déclencher l'appel — mais l'humain dans la boucle voit la 
 |--------|-------------------|-------------------|
 | Agent qui déraille accidentellement | Sandbox Docker | User Linux dédié |
 | Prompt injection → exfiltration | `--network none` | Principe moindre privilège |
-| Prompt injection → modification | Validation humaine irréversible | System prompt défensif |
+| Prompt injection → modification | Sandbox système de fichiers | System prompt défensif |
 | Escalade via tools | Scope minimal des outils | Séparation fetch/execute |
 | Fuite de secrets du repo | Sortir les secrets du container | `.dockerignore` agressif |
 
